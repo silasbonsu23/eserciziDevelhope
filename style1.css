@@ -1,0 +1,24 @@
+#first::first-letter{
+    float: left;
+    color: darkred;
+    border: 3px ridge darkgoldenrod;
+    padding: 16px;
+    background-color: gold;
+    margin: 8px;
+}
+
+a:hover{
+    color: aqua;
+}
+a:focus{
+    color:violet;
+}
+
+blockquote::before{
+    content :'"';
+}
+
+blockquote::after{
+    content: '"';
+}
+
