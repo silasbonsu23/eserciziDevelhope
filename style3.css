@@ -1,0 +1,20 @@
+body{
+    display: block;
+    position: fixed;
+    left: 40%;
+}
+
+article{
+    border: solid gray ;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+img{
+    width: 290px;
+    height: 120px;
+    position: relative;
+    left: 10%;
+}
+
+ 
