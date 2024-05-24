@@ -1,3 +1,6 @@
+<!-- Cerca tutti gli elementi con classe "paragrafo".
+Cerca l' elemento con id "elemento-3"
+Cerca tutti gli elementi h2 della pagina-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,11 +20,15 @@
       <li id="elemento-3">Elemento 3</li>
     </ul>
   </body>
+  <script>
+   const paragrafo = document.getElementsByClassName('paragrafo')
+   console.log(paragrafo);
+   const id = document.getElementById('elemento-3')
+   console.log(id);
+   const h2= document.querySelectorAll('h2')
+   console.log(h2);
+
+
+  </script>
 </html>
-/*
-<document.GetBlementByClassName("paragrafo")
-NodeList(3) [p.paragrafo, p.paragrafo, p.paragrafo]
-document.getElementsByClassName("paragrafo")
-HTMLCollection(3) [p.paragrafo, p.paragrafo, p.paragrafo]
-document.querySelector("#elemento-3")
-<li id=​"elemento-3">​…​</li>​*/
+

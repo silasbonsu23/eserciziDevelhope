@@ -1,0 +1,34 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>To-do List</h1>
+      <input type="text" placeholder="...">
+      <button onclick="addProduct()">Aggiungi</button>
+      <ul></ul>
+    </div>
+    <script >
+       function addProduct(){
+    const ul = document.querySelector('ul')
+    const input = document.querySelector('input')
+    const value = input.value
+    if(value !="" ){
+        const li = document.createElement('li')
+        const checkbox = document.createElement('input')
+        checkbox.setAttribute('type','checkbox')
+        li.innerText = value
+        ul.appendChild(li)
+        li.appendChild(checkbox)
+    }
+    input.value = ""
+}; 
+  
+
+    </script>
+  
+
+</body></html>
