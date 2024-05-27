@@ -1,0 +1,77 @@
+<!--Crea una sidebar con i seguenti componenti:
+
+Un segnaposto per un logo nella parte superiore.
+4 collegamenti per la navigazione subito dopo il logo.
+L'avatar e il nome utente in una colonna centrata nella parte inferiore.
+La barra laterale dovrebbe avere una larghezza di 200px e dovrebbe occupare l'intera altezza della pagina.
+ Aggiungi un'immagine della barra laterale che hai creato nella cartella come risultato finale.
+  I 4 collegamenti devono avere un colore del testo (#2b2b2b) e dovrebbero cambiare in #2b2bb2 quando passi il mouse sopra di essi,
+   con una transizione di 0.3 secondi. Utilizza la proprietà CSS Flexbox per gestire il layout.-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Lessons</title>
+    <style>
+        aside{
+            width: 200px;
+            height: 100%;
+
+        }
+        img{
+            width: 100px;
+        }
+        a{
+            color :#2b2b2b ;
+        }
+        a:hover{
+            color:#2b2bb2 ;
+            transition-delay: 3ms;
+        }
+        span::before{
+            content:img;
+        }
+        #icon{
+            width: 50px;
+            height: 50px;
+        }
+        
+        #main {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .container2{
+            align-self: center;
+        }
+    </style>
+  </head>
+  <body>
+    <section id="main">
+    <aside>
+        <section>
+            <img src="https://www.chantecler.it/Attachment/2024/2/23208_fronte-_thumb_982885.png">
+        </section>
+        <section class="container" >
+            <ul> 
+                <li></li><a href="#">link1</a></li>
+                <li></li><a href="#">link2</a></li>
+                <li></li><a href="#">link3</a></li>
+                <li></li><a href="#">link4</a></li>
+            </ul>
+      
+      
+            
+    </aside>
+    <section class="container2">
+        <span>Silas Bonsu</span>
+        <img src="https://static.thenounproject.com/png/4154905-200.png" id="icon">
+
+    </section>
+ 
+  
+  </body>
+</html>
